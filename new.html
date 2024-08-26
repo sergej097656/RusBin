@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Doxbin - Create new paste</title>
+
+    <link rel="stylesheet" href="static/legacy/app.css">
+    <link rel="stylesheet" href="static/files/doxbin.css">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body class="bin">
+    <div class="wrapper">
+        <div class="table">
+            <a href="new.html#" class="show-sidebar show" onclick="showHideSideBar()"><i class="fa fa-arrow-right"
+                    onclick="showHideSideBar()"></i></a>
+
+            <form action="http://1a712cce-e1e2-4022-ba11-7ae9bd521144.tunnel4.com/new_paste" id="paste-form" method="POST" class="editor-form">
+                <div id="showhide-sidebar" class="sidebar" style="text-align: center;padding-top: 0;">
+
+                    <a class="sidebar-logo" href="index.html">
+                        <pre>
+  ____            _     _       
+ |  _ \  _____  _| |__ (_)_ __  
+ | | | |/ _ \ \/ / '_ \| | '_ \ 
+ | |_| | (_) &gt;  &lt;| |_) | | | | |
+ |____/ \___/_/\_\_.__/|_|_| |_|
+                        </pre>
+                    </a>
+
+                    <div class="options">
+
+                        <p style="color:red;text-align: center;font-size:15px;">
+                            <b>
+                                <a href="tos.html" style="color:red;">
+                                    READ TOS BEFORE POSTING!
+                                </a>
+                            </b>
+                            <br>
+                            Any post that violates our TOS will be removed.
+                        </p>
+
+                        <h3>Title:</h3>
+
+                        <input type="text" name="pasteTitle" id="paste-title" maxlength="70" value="">
+
+                    </div>
+
+                    <div class="options">
+                        <ul>
+                            <li>
+                                <input type="submit" id="create-paste" value="Create" class="button">
+                            </li>
+                            <li>
+                                <input type="reset" value="Clear" class="button">
+                            </li>
+                        </ul>
+                    </div>
+
+                    <p>
+                        Please note that all posted information is publicly available and must follow our
+                        <a href="https://doxbin.org/tos" style="text-decoration: underline;">
+                            TOS.
+                        </a>
+                    </p>
+                </div>
+
+                <div class="editor-container">
+                    <textarea name="pasteContent" id="paste-content" class="editor mousetrap"
+                        wrap="off">This is the default template provided by the site admins.
+You can always completely to remove this or adjust this to fit your needs
+
+--------------------------------------------------------------------------------------
+
+ ######                                     
+ #     # ######   ##    ####   ####  #    # 
+ #     # #       #  #  #      #    # ##   # 
+ ######  #####  #    #  ####  #    # # #  # 
+ #   #   #      ######      # #    # #  # # 
+ #    #  #      #    # #    # #    # #   ## 
+ #     # ###### #    #  ####   ####  #    # 
+
+
+Reason -
+
+--------------------------------------------------------------------------------------
+
+
+ ######                                                   
+ #     # ###### #####   ####   ####  #    #   ##   #      
+ #     # #      #    # #      #    # ##   #  #  #  #      
+ ######  #####  #    #  ####  #    # # #  # #    # #      
+ #       #      #####       # #    # #  # # ###### #      
+ #       #      #   #  #    # #    # #   ## #    # #      
+ #       ###### #    #  ####   ####  #    # #    # ###### 
+                                                          
+
+Name -
+SSN -
+DOB -
+
+Phone -
+
+Address -
+
+Emails -
+
+IP -     
+
+Password(s) -
+
+Usernames/Social Media -
+
+Work -
+
+Database Records -
+
+Other -
+
+--------------------------------------------------------------------------------------
+
+ #######                              
+ #         ##   #    # # #      #   # 
+ #        #  #  ##  ## # #       # #  
+ #####   #    # # ## # # #        #   
+ #       ###### #    # # #        #   
+ #       #    # #    # # #        #   
+ #       #    # #    # # ######   #   
+
+--------------------------------------------
+                                      
+ #######                                   
+ #         ##   ##### #    # ###### #####  
+ #        #  #    #   #    # #      #    # 
+ #####   #    #   #   ###### #####  #    # 
+ #       ######   #   #    # #      #####  
+ #       #    #   #   #    # #      #   #  
+ #       #    #   #   #    # ###### #    # 
+
+Name -
+SSN -
+DOB -
+
+Phone -
+
+Address -
+
+Emails -
+
+IP -     
+
+Password(s) -
+
+Usernames/Social Media -
+
+Work -
+
+Database Records -
+
+Other -
+
+--------------------------------------------------------------------------------------
+
+ #     #                                   
+ ##   ##  ####  ##### #    # ###### #####  
+ # # # # #    #   #   #    # #      #    # 
+ #  #  # #    #   #   ###### #####  #    # 
+ #     # #    #   #   #    # #      #####  
+ #     # #    #   #   #    # #      #   #  
+ #     #  ####    #   #    # ###### #    # 
+
+Name -
+SSN -
+DOB -
+
+Phone -
+
+Address -
+
+Emails -
+
+IP -     
+
+Password(s) -
+
+Usernames/Social Media -
+
+Work -
+
+Database Records -
+
+Other -
+
+--------------------------------------------------------------------------------------
+
+                                                                        
+      ##### ##                               /                          
+   /#####  /##                             #/          #                
+ //    /  / ###                            ##         ###               
+/     /  /   ###                           ##          #                
+     /  /     ###                          ##                           
+    ## ##      ##    /###     /##    ###   ## /###   ###   ###  /###    
+    ## ##      ##   / ###  / / ###  #### / ##/ ###  / ###   ###/ #### / 
+    ## ##      ##  /   ###/     ### /###/  ##   ###/   ##    ##   ###/  
+    ## ##      ## ##    ##       ##/  ##   ##    ##    ##    ##    ##   
+    ## ##      ## ##    ##        /##      ##    ##    ##    ##    ##   
+    #  ##      ## ##    ##       / ###     ##    ##    ##    ##    ##   
+       /       /  ##    ##      /   ###    ##    ##    ##    ##    ##   
+  /###/       /   ##    ##     /     ###   ##    /#    ##    ##    ##   
+ /   ########/     ######     /       ### / ####/      ### / ###   ###  
+/       ####        ####     /         ##/   ###        ##/   ###   ### 
+#                                                                       
+ ##                                                                     
+
+                    </textarea>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    <script>
+        function showHideSideBar() {
+            var x = document.getElementById("showhide-sidebar");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
